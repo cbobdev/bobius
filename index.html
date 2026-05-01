@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en" data-palette="forest" data-cursor="pen">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Böbius Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow-1"></div>
+<div class="bg-glow-2"></div>
+<canvas class="mesh-bg" id="mesh-canvas"></canvas>
+
+<div class="site" id="main-site">
+
+  <div class="content">
+
+    <nav class="nav">
+      <div class="nav-logo interactive">B<span class="logo-o"><span class="logo-dots"><span></span><span></span></span>o</span>bius</div>
+      <div class="nav-mid">
+        <span class="interactive" data-open="about">About</span>
+        <span class="interactive" data-open="contact">Contact</span>
+      </div>
+      <button class="nav-cta interactive" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">Launch →</button>
+    </nav>
+
+    <section class="hero">
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="hero-dim left">A · 02 — 2026 · STRUCTURAL</div>
+      <div class="hero-dim right">REV · 004 · BÖBIUS</div>
+
+      <h1 class="hero-title">B<span class="hero-o"><span class="hero-dots"><span></span><span></span></span>o</span>bius</h1>
+      <div class="hero-sub">Engineering</div>
+      <p class="hero-claim">Verify everything. <em>Trust the result.</em></p>
+      <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
+    </section>
+
+    <!-- ============ STRUCTURA ============ -->
+    <section class="structura-section" id="tools">
+      <div class="structura-intro slide-in">
+        <div class="section-label">the suite</div>
+        <h2 class="structura-title">One workspace. <em>Every Eurocode.</em></h2>
+      </div>
+
+      <article class="structura-card rise-in interactive">
+        <div class="sc-info">
+          <div class="sc-top">
+            <div class="sc-lbl"><span class="sc-dot"></span> Live now · v1.2</div>
+            <div class="sc-version">REV · 004</div>
+          </div>
+          <div class="sc-name">Böbius<br><em>Structura</em></div>
+          <div class="sc-tag">Structural verification, end&#8209;to&#8209;end.</div>
+          <div class="sc-desc">A single workspace that walks you through every Eurocode check. Every formula traceable, every result auditable. Print-ready reports that show the full working, step by step.</div>
+          <button class="sc-cta interactive">
+            <span>Launch Böbius</span>
+            <span class="sc-cta-arrow">→</span>
+          </button>
+        </div>
+
+        <div class="sc-preview">
+          <div class="sc-preview-frame">
+            <div class="sc-preview-bar"><span></span><span></span><span></span></div>
+            <div class="sc-preview-body">
+              <div class="sc-prev-side">
+                <div class="sc-prev-grp">EC1</div>
+                <div class="sc-prev-itm">Snow</div>
+                <div class="sc-prev-itm">Wind</div>
+                <div class="sc-prev-grp">EC3</div>
+                <div class="sc-prev-itm on">Steel · 1.1</div>
+                <div class="sc-prev-itm">Steel Fire</div>
+                <div class="sc-prev-itm">Connections</div>
+              </div>
+              <div class="sc-prev-main">
+                <div class="sc-prev-h">EC3 · Part 1-1</div>
+                <div class="sc-prev-svg">
+                  <svg viewBox="0 0 120 64" style="width:100%;max-width:140px">
+                    <g stroke="var(--accent)" stroke-width="1.4" fill="none">
+                      <path d="M30 12 L90 12 L90 18 L65 18 L65 46 L90 46 L90 52 L30 52 L30 46 L55 46 L55 18 L30 18 Z"/>
+                    </g>
+                    <g stroke="var(--ink3)" stroke-width="0.5" stroke-dasharray="2 2">
+                      <line x1="30" y1="6" x2="90" y2="6"/>
+                      <line x1="30" y1="3" x2="30" y2="9"/>
+                      <line x1="90" y1="3" x2="90" y2="9"/>
+                      <line x1="100" y1="12" x2="106" y2="12"/>
+                      <line x1="100" y1="52" x2="106" y2="52"/>
+                      <line x1="103" y1="12" x2="103" y2="52"/>
+                    </g>
+                    <text x="60" y="3" font-family="JetBrains Mono, monospace" font-size="3.5" fill="var(--ink3)" text-anchor="middle">b = 300</text>
+                    <text x="108" y="34" font-family="JetBrains Mono, monospace" font-size="3.5" fill="var(--ink3)">h = 290</text>
+                  </svg>
+                </div>
+                <div class="sc-prev-section">
+                  <div class="sc-prev-k">Section</div>
+                  <div class="sc-prev-v">HEA 300 · S355</div>
+                </div>
+              </div>
+              <div class="sc-prev-right">
+                <div class="sc-prev-check"><span class="nm">Compr.</span><span class="vl ok">0.31</span></div>
+                <div class="sc-prev-check"><span class="nm">Bend M<sub>y</sub></span><span class="vl ok">0.58</span></div>
+                <div class="sc-prev-check"><span class="nm">Bend M<sub>z</sub></span><span class="vl ok">0.41</span></div>
+                <div class="sc-prev-check"><span class="nm">Shear</span><span class="vl ok">0.28</span></div>
+                <div class="sc-prev-check"><span class="nm">Torsion</span><span class="vl ok">0.35</span></div>
+                <div class="sc-prev-check"><span class="nm">FB y-y</span><span class="vl warn">0.72</span></div>
+                <div class="sc-prev-check"><span class="nm">FB z-z</span><span class="vl bad">1.08</span></div>
+                <div class="sc-prev-check"><span class="nm">LTB</span><span class="vl warn">0.92</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="modules-strip">
+        <div class="modules-strip-head rise-in">
+          <span>Inside Structura · <em>Eurocode coverage</em></span>
+          <span>8 modules · 1 live</span>
+        </div>
+        <div class="modules-grid">
+
+          <div class="module wip rise-in interactive">
+            <div class="mod-ec">EN 1991</div>
+            <div class="mod-name">Actions</div>
+            <div class="mod-foot">
+              <span class="mod-pill wip">Under Development</span>
+            </div>
+          </div>
+
+          <div class="module wip rise-in interactive">
+            <div class="mod-ec">EN 1992</div>
+            <div class="mod-name">Concrete</div>
+            <div class="mod-foot">
+              <span class="mod-pill wip">Under Development</span>
+            </div>
+          </div>
+
+          <div class="module live rise-in interactive">
+            <div class="mod-ec">EN 1993</div>
+            <div class="mod-name">Steel</div>
+            <div class="mod-foot">
+              <span class="mod-pill live"><span class="pulse"></span>Live</span>
+            </div>
+          </div>
+
+          <div class="module soon rise-in interactive">
+            <div class="mod-ec">EN 1993</div>
+            <div class="mod-name">Connections</div>
+            <div class="mod-foot">
+              <span class="mod-pill soon">Soon</span>
+            </div>
+          </div>
+
+          <div class="module wip rise-in interactive">
+            <div class="mod-ec">EN 1993</div>
+            <div class="mod-name">Fatigue</div>
+            <div class="mod-foot">
+              <span class="mod-pill wip">Under Development</span>
+            </div>
+          </div>
+
+          <div class="module wip rise-in interactive">
+            <div class="mod-ec">EN 1995</div>
+            <div class="mod-name">Timber</div>
+            <div class="mod-foot">
+              <span class="mod-pill wip">Under Development</span>
+            </div>
+          </div>
+
+          <div class="module wip rise-in interactive">
+            <div class="mod-ec">EN 1998</div>
+            <div class="mod-name">Seismic</div>
+            <div class="mod-foot">
+              <span class="mod-pill wip">Under Development</span>
+            </div>
+          </div>
+
+          <div class="module wip rise-in interactive">
+            <div class="mod-ec">EN 1999</div>
+            <div class="mod-name">Aluminium</div>
+            <div class="mod-foot">
+              <span class="mod-pill wip">Under Development</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="statement-section">
+      <p class="statement-text" id="reveal-text"><span class="stmt-break">Every calculation should be <em>readable</em>.</span><span class="stmt-break">Every formula <em>traceable</em>.</span><span class="stmt-break">Every result should earn your <em>trust</em>.</span></p>
+    </section>
+
+    <section class="cta-footer">
+      <h2 class="rise-in">Start<br><em>calculating.</em></h2>
+      <a href="#tools" class="cta-btn rise-in interactive"><span>Launch Böbius</span><span class="cta-btn-arrow">→</span></a>
+      <div class="footer-bottom">
+        <div>© 2026 Böbius Engineering</div>
+        <div></div>
+        <span class="interactive" data-open="contact">Get in touch →</span>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="overlay-wrap" id="ov-about">
+  <div class="overlay-bg" data-close="about"></div>
+  <div class="about-panel">
+    <div class="panel-kicker">who's behind böbius</div>
+    <h2 class="about-title">Built the way<br>we'd want to <em>use it.</em></h2>
+    <p class="about-bio">A structural engineer with a stubborn habit: <em>he can't trust a result he doesn't understand.</em> So he builds his own tools, obsessed with optimising processes, reverse engineering how things work, writing code that does the quiet thinking for him.</p>
+    <div class="about-orn" aria-hidden="true">
+      <svg width="180" height="18" viewBox="0 0 180 18" style="color: var(--accent)">
+        <line x1="0" y1="9" x2="78" y2="9" style="stroke: color-mix(in oklab, var(--ink) 25%, transparent); stroke-width: 0.8"/>
+        <line x1="102" y1="9" x2="180" y2="9" style="stroke: color-mix(in oklab, var(--ink) 25%, transparent); stroke-width: 0.8"/>
+        <polygon points="90,3 96,12 84,12" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="90" cy="3" r="1.6" fill="currentColor"/>
+        <circle cx="96" cy="12" r="1.6" fill="currentColor"/>
+        <circle cx="84" cy="12" r="1.6" fill="currentColor"/>
+      </svg>
+    </div>
+    <p class="about-bio">A software engineer who walked into <em>structural engineering</em> from the outside. Eurocodes, to him, are systems to <em>reverse engineer</em>, pulled apart line by line until the logic gives in. The results are tools that don't just work, they feel good to use: <em>powerful underneath, clear on the surface.</em></p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="overlay-wrap" id="ov-contact">
+  <div class="overlay-bg" data-close="contact"></div>
+  <div class="contact-stage">
+    <div class="orbit-ring o1"></div>
+    <div class="orbit-ring o2"></div>
+    <div class="contact-center">
+      <div class="contact-kicker">— reach out —</div>
+      <div class="contact-name">Let's<br><em>talk.</em></div>
+    </div>
+    <a class="orb orb-li orb-float interactive" href="https://www.linkedin.com/in/boban-cvetanoski-352565245/" target="_blank">
+      <svg viewBox="0 0 24 24" width="38" height="38" fill="#fff"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      <span class="orb-label">LinkedIn</span>
+    </a>
+    <a class="orb orb-em orb-float interactive" href="mailto:bobius.engineering@gmail.com">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      <span class="orb-label">bobius.engineering@gmail.com</span>
+    </a>
+    <a class="orb orb-gh orb-float interactive" href="https://github.com/alezen9" target="_blank">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#F8F3E9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+      <span class="orb-label">GitHub</span>
+    </a>
+  </div>
+</div>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor">
+  <div class="cursor-ring"></div>
+  <div class="cursor-crosshair"></div>
+  <div class="cursor-xy" id="cursor-xy">x 0, y 0</div>
+  <div class="cursor-dot"></div>
+</div>
+<canvas class="pen-trail" id="pen-trail"></canvas>
+
+<script src="main.js" defer></script>
+</body>
+</html>
